@@ -15,7 +15,8 @@ const CalculateRetirement = (firstName: string, year: number): [string, number] 
 
 	// Return appropriate message and years left
 	if (yearsUntilRetirement <= 0) {
-		return [`${firstName} has already retired!`, 0];
+		return console.log(`${firstName} has already retired!`, 0);
+		// return [`${firstName} has already retired!`, 0];
 	} else {
 		return [`${firstName} has ${yearsUntilRetirement} years before retirement`, yearsUntilRetirement];
 	}
